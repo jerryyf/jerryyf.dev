@@ -157,7 +157,9 @@ We can access our remote server by browsing to either `0.0.0.0:8000` if testing 
 
 So far, we have a functioning debug server. For deployment for access over the internet and to the outside world, a proper tech stack is required for security and reliability. Here I use the same stack as follows from the Etebase documentation:
 
-    the web client <-> Nginx <-> the socket <-> uvicorn <-> fastapi/Django
+```
+the web client <-> Nginx <-> the socket <-> uvicorn <-> fastapi/Django
+```
 
 ## Installing nginx
 
