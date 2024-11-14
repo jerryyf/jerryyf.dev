@@ -1,12 +1,41 @@
-'use client'
 
 import { BlogPosts } from 'app/components/posts'
 
-import Counter from 'app/lib/counter'
-import triggerLambda from 'app/lib/lambda'
+import { triggerLambda } from './lib/lambda'
+import { headers } from 'next/headers'
 
 export default function Page() {
-  triggerLambda()
+  const headersList = headers()
+  const ip = headersList.get('x-forwarded-for') || ''
+  async function geo() {
+    'use server'
+    const url = 'http://ip-api.com/json'
+    let res = await fetch(url + '/' + ip)
+    let data = await res.json()
+    if (data.status != 'fail') {
+      let payload = {
+        status: data.status,
+        country: data.country,
+        region: data.regionName,
+        city: data.city,
+        zip: data.zip,
+        lat: data.lat,
+        lon: data.lon,
+        timezone: data.timezone,
+        isp: data.isp,
+        org: data.org,
+        ip: data.query
+      }
+      triggerLambda(payload)
+    }
+    else {
+      triggerLambda({
+        status: data.status,
+        ip: ip,
+      })
+    }
+  }
+  geo()
 
   return (
     <section>
@@ -14,11 +43,10 @@ export default function Page() {
         jerryyf.dev
       </h1>
       <p className="mb-4">
-        {`Hello from my homelab.`}
+        {`I am a software engineer. Vim enjoyer. Homelabber.`}
       </p>
       <div className="my-8">
-        <Counter fontSize={20} />
-        {/* <BlogPosts /> */}
+        <BlogPosts />
       </div>
     </section>
   )

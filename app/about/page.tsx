@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
  
-const NoSSR = dynamic(() => import('../components/no-ssr'), { ssr: false })
+const Badges = dynamic(() => import('../components/badges'), { ssr: false })
 
 export default function Page() {
   return (
@@ -11,7 +11,7 @@ export default function Page() {
       <p className="mb-4">
         {`Certifications:`}
       </p>
-      <NoSSR />
+      <Badges />
       <div className="my-8">
       </div>
     </section>
