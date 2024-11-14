@@ -1,6 +1,4 @@
-import dynamic from 'next/dynamic'
- 
-const Badges = dynamic(() => import('../components/badges'), { ssr: false })
+import CredlyBadge from 'app/components/credlyBadge'
 
 export default function Page() {
   return (
@@ -9,9 +7,12 @@ export default function Page() {
         about
       </h1>
       <p className="mb-4">
+        {`Computer Science Graduate.`}
+      </p>
+      <p className="mb-4">
         {`Certifications:`}
       </p>
-      <Badges />
+      <CredlyBadge badgeId={"9836a4d5-2be7-4b7f-937b-32eb99e839b3"} />
       <div className="my-8">
       </div>
     </section>
