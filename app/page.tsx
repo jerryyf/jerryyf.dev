@@ -1,5 +1,6 @@
 import { BlogPosts } from 'app/components/posts'
 import { observe } from './lib/observe'
+import { TypeWriter } from './components/typewriter'
 
 export default function Page() {
   observe()
@@ -8,9 +9,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         jerryyf.dev
       </h1>
-      <p className="mb-4">
-        {`I am a software engineer. Vim enjoyer. Homelabber.`}
-      </p>
+      <TypeWriter />
       <div className="my-8">
         <BlogPosts />
       </div>
