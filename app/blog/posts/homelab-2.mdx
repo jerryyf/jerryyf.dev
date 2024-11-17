@@ -1,11 +1,12 @@
 ---
-title: Homelab Series - Structured Networking
-publishedAt: '2024-11-02'
+title: "Homelab Series - Structured Networking"
+publishedAt: "2024-11-02"
+summary: "A brief intrudction to secure home networking."
 ---
 
 ## Overview
 
-A properly designed home network configuration is, I would argue, necessary if we're going to run servers (especially public facing ones), IoT devices, client devices in our home. Having all your devices on a "flat" network where any client connected can all communicate with each other really isn't optimal.
+A properly designed home network configuration is, necessary if we're going to run servers (especially public facing ones), IoT devices, client devices in our home. Having all your devices on a "flat" network where any client connected can all communicate with each other really isn't optimal.
 
 This post will focus on the following key points:
 
@@ -37,14 +38,14 @@ The firewall appliance and wireless AP would replace the ISP-issued wireless rou
 
 ## Network topology
 
+<Image src={'/blog/network-diagram.png'} alt={'network diagram'} />
+
 My current network setup at the time of writing is as follows:
 
 - LAN (untagged) - subnet 192.168.1.0/24 - network devices
 - VLAN tag 10 - subnet 192.168.10.0/24 - guestnet
 - VLAN tag 20 - subnet 192.168.20.0/24 - iotnet
-- VLAN tag 30 - subnet 192.168.30.0/24 - mainnet
-
-![[network diagram]]
+- VLAN tag 30 - subnet 192.168.30.0/24 - mainnet.
 
 We'll go through how to achieve something similar in the next sections. Do not proceed if you cannot afford internet downtime for your home network!
 

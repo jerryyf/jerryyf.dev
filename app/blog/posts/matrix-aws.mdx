@@ -1,19 +1,24 @@
 ---
 title: "Setting up a Matrix Dendrite Homeserver on AWS Lightsail"
-publishedAt: 2024-03-08
+publishedAt: "2024-03-08"
+summary: "A brief writeup on setting up a Matrix homeserver."
 ---
 
 This post serves as a reference for a project. I will go over the steps taken to setup a self-hosted [Matrix](https://matrix.org/) homeserver, running Dendrite on AWS Lightsail with minimal resources.
 
 ## The Matrix protocol
 
-Matrix is,
+Matrix is:
 
 > An open network for secure, decentralised communication
 
 Essentailly, anyone can run their own homeserver, which *federates* with other homeservers in a decentralised manner - similar to P2P or blockchain networks - creating a [fediverse](https://www.theverge.com/24063290/fediverse-explained-activitypub-social-media-open-protocol). One well-known social media use case of this technology is Mastodon. I decided on this project as I believe it has a great potential future, decentralising cloud native architecture increases reliability and resilience. As an open network, you are in control of your own privacy and security - not the case with a centralised company that stores millions of user data on servers under their control.
 
 ## High level overview
+
+<Image src={'/blog/matrix-aws.png'} alt={'high level diagram'} />
+
+Components:
 
 - Dendrite second gen homeserver
 	- small memory footprint - better for deploying on virtual instances

@@ -1,6 +1,7 @@
 ---
 title: "Hack The Box - Nibbles"
 publishedAt: "2023-09-10"
+summary: "Hack The Box Nibbles writeup."
 ---
 
 This is my process write up on the Nibbles box from [HTB](https://www.hackthebox.com/). I will cover both the manual approach as well as the quicker approach leveraging the [metasploit](http://www.metasploit.com) framework.
@@ -23,7 +24,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Heading to the IP in a browser reveals a "Hello World!" page, with nothing interesting. We can take a look at the HTML source code with browser dev tools, which shows a comment suggesting to head to `/nibbleblog`.
 
+<Image src={'/blog/htb-nibbles1.png'} alt={'screenshot of dev tools'} />
+
 A standard blog page is shown, looks like it's powered by nibbleblog. We can also note that the title is "Nibbles Yum yum".
+
+<Image src={'/blog/htb-nibbles2.png'} alt={'screenshot of blog page'} />
 
 ## Directory enumeration
 
@@ -60,6 +65,12 @@ Progress: 4727 / 4727 (100.00%)
 Finished
 ===============================================================
 ```
+
+Navigating to `/admin`:
+<Image src={'/blog/htb-nibbles3.png'} alt={'screenshot of directory'} />
+
+Navigating to `/admin.php`:
+<Image src={'/blog/htb-nibbles4.png'} alt={'screenshot of admin login page'} />
 
 Notably, there is a also readme which contains specific information on what is installed on the server and its version:
 
@@ -101,6 +112,8 @@ We can also see that there is a blacklist in place to protect against brute-forc
 No signs of cleartext password can be found so we try some default credentials such as admin, password, but to no avail. We could do some guesswork, since there are several mentions of `nibbles` in the title, and in `nibbles yum yum`.
 
 Fortunately `admin:nibbles` does the trick, and we gain access to the admin dashboard.
+
+<Image src={'/blog/htb-nibbles5.png'} alt={'screenshot of admin dashboard'} />
 
 ## Gaining Remote Code Execution (RCE)
 
