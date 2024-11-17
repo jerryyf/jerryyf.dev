@@ -11,7 +11,6 @@ export default function Page() {
       </h1>
       <TypeWriter />
       <div className="my-8">
-        <BlogPosts />
       </div>
     </section>
   )
