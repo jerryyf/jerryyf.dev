@@ -20,8 +20,7 @@ const CredlyBadge = ({ badgeId }) => {
       <div 
         data-iframe-width="150"
         data-iframe-height="270"
-        data-share-badge-id={badgeId}
-        data-share-badge-host="https://www.youracclaim.com">
+        data-share-badge-id={badgeId}>
       </div>
     </div>
   )
