@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'jerryyf.dev',
     description: 'This is my portfolio.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'jerryyf.dev',
     locale: 'en_US',
     type: 'website',
   },
