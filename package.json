@@ -8,6 +8,7 @@
   "dependencies": {
     "@aws-sdk/client-lambda": "^3.688.0",
     "@aws-sdk/credential-providers": "^3.687.0",
+    "@nextui-org/spinner": "^2.2.2",
     "@tailwindcss/postcss": "4.0.0-alpha.13",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
