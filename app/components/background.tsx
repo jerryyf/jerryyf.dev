@@ -41,7 +41,7 @@ export const Background = () => {
           },
           onHover: {
             enable: true,
-            mode: "repulse",
+            mode: "connect",
           },
         },
         modes: {
@@ -52,6 +52,13 @@ export const Background = () => {
             distance: 100,
             duration: 0.5,
           },
+          connect: {
+            distance: 100,
+            radius: 100,
+            links: {
+              opacity: 1
+            }
+          }
         },
       },
       particles: {
