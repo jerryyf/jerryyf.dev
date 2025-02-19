@@ -1,5 +1,7 @@
 import CredlyBadge from 'app/components/credlyBadge'
 
+// test CI
+
 export const metadata = {
   title: 'about',
   description: 'About me.',
