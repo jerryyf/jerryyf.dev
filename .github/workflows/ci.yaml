@@ -11,7 +11,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  VERSION: v1.0.6
+  VERSION: v1.0.7
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -70,4 +70,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           secrets: |
-            "aws_region=${{ secrets.AWS_REGION }}"
+            "NEXT_PUBLIC_AWS_REGION=${{ secrets.AWS_REGION }}"
+            "NEXT_PUBLIC_AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}"
+            "NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}""
+            "NEXT_PUBLIC_LAMBDA_FUNCTION_NAME=${{ secrets.LAMBDA_FUNCTION_NAME }}"
