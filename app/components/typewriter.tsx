@@ -6,13 +6,13 @@ export function TypeWriter() {
   return (
     <TypeAnimation
       sequence={[
-        'is a fullstack developer',
+        'is a DevOps engineer',
         2000,
         'is a security engineer',
         2000,
         'is a Vim enjoyer',
         2000,
-        'is a homelabber',
+        'is a homelab enthusiast',
         2000,
       ]}
       wrapper="span"
