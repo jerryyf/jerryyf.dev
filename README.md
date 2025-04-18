@@ -23,6 +23,6 @@ pnpm start
 ### With Docker
 
 ```bash
-docker build -t portfolio .
+docker buildx build -t portfolio .
 docker run -p 127.0.0.1:3000:3000 portfolio:latest
 ```
