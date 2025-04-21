@@ -10,7 +10,10 @@ export default function Page() {
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">about</h1>
       <p className="mb-4">
-        {`Graduate: Computer Science - Security Engineering`}
+        {`Bachelor of Computer Science - Security Engineering`}
+      </p>
+      <p className="mb-4">
+        {`Certifications:`}
       </p>
       <div className="flex gap-4 mb-4">
         <div className="my-8">

@@ -8,11 +8,11 @@ export function TypeWriter() {
       sequence={[
         'is a platform engineer',
         2000,
+        'is a homelab enthuasiast',
+        2000,
         'is a security engineer',
         2000,
         'is a Vim enjoyer',
-        2000,
-        'is a homelab enthuasiast',
         2000,
       ]}
       wrapper="span"
