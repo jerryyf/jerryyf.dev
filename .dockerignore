@@ -24,3 +24,6 @@ yarn-error.log*
 # Ignore Dockerfile and docker-compose files
 Dockerfile
 docker-compose.yml
+
+# Ignore webhooks
+webhooks
