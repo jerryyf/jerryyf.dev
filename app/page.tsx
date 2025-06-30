@@ -37,7 +37,7 @@ export default function Page() {
             className="text-14 font-mono font-semibold flex items-center transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/jerryyf/amad3us"
+            href="https://github.com/jerryyf/home-ops"
           >$ home-ops</a>
           <h3 className="text-14 font-semibold"></h3>
           <p className="text-sm text-white-600">Declarative GitOps for my home infrastructure.</p>
