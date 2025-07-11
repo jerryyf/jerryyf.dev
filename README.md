@@ -20,9 +20,9 @@ pnpm build
 pnpm start
 ```
 
-### With Docker
+### Docker
 
 ```bash
-docker buildx build -t portfolio .
-docker run -p 127.0.0.1:3000:3000 portfolio:latest
+docker buildx build -t jerryyf.dev .
+docker run -p 127.0.0.1:3000:3000 jerryyf.dev:latest
 ```

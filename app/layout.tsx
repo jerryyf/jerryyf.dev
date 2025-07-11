@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     default: 'jerryyf.dev',
     template: '%s | jerryyf.dev',
   },
-  description: 'This is my portfolio.',
+  description: 'hi.',
   openGraph: {
     title: 'jerryyf.dev',
-    description: 'This is my portfolio.',
+    description: 'hi.',
     url: baseUrl,
     siteName: 'jerryyf.dev',
     locale: 'en_US',
@@ -45,14 +45,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-gradient-to-r from-white to-cyan-100 dark:text-white dark:bg-gradient-to-r dark:from-cyan-900 dark:to-black',
+        'text-black bg-cyan-300  from-white to-gray-600 dark:text-white dark:bg-gradient-to-r dark:from-orange-900 dark:to-purple-900',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Footer />
         </main>

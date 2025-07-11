@@ -32,7 +32,7 @@ export const Background = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      fpsLimit: 120,
+      fpsLimit: 30,
       interactivity: {
         events: {
           onClick: {
@@ -63,10 +63,10 @@ export const Background = () => {
       },
       particles: {
         color: {
-          value: "#b3b3b3",
+          value: "#ffffff",
         },
         links: {
-          color: "#b3b3b3",
+          color: "#ffffff",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -86,7 +86,7 @@ export const Background = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 40,
         },
         opacity: {
           value: 0.5,
@@ -95,7 +95,7 @@ export const Background = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 2, max: 4 },
         },
       },
       detectRetina: true,
