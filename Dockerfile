@@ -30,10 +30,6 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 
 RUN \
-  --mount=type=secret,id=NEXT_PUBLIC_AWS_REGION,env=NEXT_PUBLIC_AWS_REGION \
-  --mount=type=secret,id=NEXT_PUBLIC_AWS_ACCESS_KEY_ID,env=NEXT_PUBLIC_AWS_ACCESS_KEY_ID \
-  --mount=type=secret,id=NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,env=NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY \
-  --mount=type=secret,id=NEXT_PUBLIC_LAMBDA_FUNCTION_NAME,env=NEXT_PUBLIC_LAMBDA_FUNCTION_NAME \
   if [ -f yarn.lock ]; then yarn run build; \
   elif [ -f package-lock.json ]; then npm run build; \
   elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
