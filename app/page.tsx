@@ -9,7 +9,7 @@ export default function Page() {
     <section className="-scroll-mt-px flex-grow font-mono">
       <Background />
       <h1 className="mt-32 text-4xl font-bold font-mono">
-        jerryyf.dev
+        jerryyf
       </h1>
       <div className="mt-16 font-mono">
         <TypeWriter />
@@ -25,10 +25,10 @@ export default function Page() {
             className="text-14 font-mono font-semibold flex items-center transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/jerryyf/amad3us"
-          >$ amad3us</a>
+            href="https://github.com/jerryyf/alt"
+          >$ alt </a>
           <h3 className="text-14 font-semibold"></h3>
-          <p className="text-sm text-white-600">An open framework for building local LLM capabilities.</p>
+          <p className="text-sm text-white-600">An open framework for local LLM research.</p>
         </div>
 
         {/* project 2 */}
@@ -40,7 +40,7 @@ export default function Page() {
             href="https://github.com/jerryyf/home-ops"
           >$ home-ops</a>
           <h3 className="text-14 font-semibold"></h3>
-          <p className="text-sm text-white-600">Declarative GitOps for my home infrastructure.</p>
+          <p className="text-sm text-white-600">Declarative GitOps for my home infrastructure (private repo for now)</p>
         </div>
       </div>
       <div>

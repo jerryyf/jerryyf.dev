@@ -8,9 +8,11 @@ export function TypeWriter() {
       sequence={[
         'is a security engineer',
         2000,
-        'runs some servers on his desk',
+        'self-hosts things',
         2000,
         'is a platform engineer',
+        2000,
+        'uses Arch btw',
         2000,
         'is a Vim enjoyer',
         2000,
