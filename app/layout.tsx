@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     default: 'jerryyf.dev',
     template: '%s | jerryyf.dev',
   },
-  description: 'hi.',
+  description: 'welcome to my landing page',
   openGraph: {
     title: 'jerryyf.dev',
-    description: 'hi.',
+    description: 'welcome to my landing page',
     url: baseUrl,
     siteName: 'jerryyf.dev',
     locale: 'en_US',
@@ -52,7 +52,7 @@ export default function RootLayout({
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
           <Footer />
         </main>

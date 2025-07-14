@@ -8,11 +8,11 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">about</h1>
-      <p className="mb-4">
+      <h1 className="font-semibold font-mono text-2xl mb-8">about</h1>
+      <p className="mb-8 font-mono">
         {`Bachelor of Computer Science - Security Engineering`}
       </p>
-      <p className="mb-4">
+      <p className="mt-8 font-mono">
         {`Certifications:`}
       </p>
       <div className="flex gap-4 mb-4">
@@ -23,7 +23,7 @@ export default function Page() {
           <CredlyBadge badgeId={"0a8c9684-b7f1-4376-88f1-7086876e96cb"} />
         </div>
       </div>
-      <p className="mb-4">
+      <p className="mb-4 font-mono">
         {`Email: contact [at] jerryyf [dot] dev`}
       </p>
     </section>
