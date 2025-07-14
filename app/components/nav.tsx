@@ -3,6 +3,7 @@ import Link from 'next/link'
 const navItems = {
   '/': {
     name: 'home',
+    href: '/',
   },
   '/blog': {
     name: 'blog',
@@ -10,6 +11,7 @@ const navItems = {
   },
   '/about': {
     name: 'about',
+    href: '/about',
   },
 }
 
