@@ -40,7 +40,7 @@ export default function Page() {
             href="https://github.com/jerryyf/home-ops"
           >$ home-ops</a>
           <h3 className="text-14 font-semibold"></h3>
-          <p className="text-sm text-white-600">Declarative GitOps for my home infrastructure (private repo for now)</p>
+          <p className="text-sm text-white-600">Declarative GitOps for my home infrastructure</p>
         </div>
       </div>
     </section>
