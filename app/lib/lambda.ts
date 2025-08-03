@@ -3,15 +3,13 @@ import { fromEnv } from '@aws-sdk/credential-providers'
 
 export async function triggerLambda(visitorDetails:Object) {
 
-  // Workaround for Next.js environment variables during build time
-
   const client = new LambdaClient({
     credentials: fromEnv(),
     region: process.env.AWS_REGION
   })
 
   const input = {
-    FunctionName: process.env.LAMBDA_FUNCTION_NAME,
+    FunctionName: process.env.AWS_LAMBDA_FUNCTION_NAME,
     Payload: JSON.stringify(visitorDetails)
   };
   const command = new InvokeCommand(input)
