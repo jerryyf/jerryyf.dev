@@ -6,13 +6,11 @@ export function TypeWriter() {
   return (
     <TypeAnimation
       sequence={[
-        'is a security engineer',
-        2000,
-        'self-hosts things',
+        'is security first',
         2000,
         'is a platform engineer',
         2000,
-        'uses Arch btw',
+        'self-hosts',
         2000,
         'is a Vim enjoyer',
         2000,
